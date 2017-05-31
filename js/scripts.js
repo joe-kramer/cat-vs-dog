@@ -9,6 +9,7 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+
   $("#catBtn").click(function() {
     $("#dog").append("<li>bark bark bark</li>");
     $("#cat").append("<li>Meow!</li>");
@@ -19,8 +20,17 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+
   $("#clearBtn").click(function() {
     $("#dog").empty();
     $("#cat").empty();
+  });
+
+  $("#dogPic").click(function() {
+    $("#dog").before("<img src=\"img/dog.jpeg\">");
+  });
+
+  $("#catPic").click(function() {
+    $("#cat").after("<img src=\"img/cat.jpeg\">");
   });
 });
